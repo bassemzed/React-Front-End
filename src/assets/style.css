@@ -198,15 +198,15 @@ body {
     left: -35%; }
 
 .green-circle {
-  background-color: #CBEEEB; }
+  background-color: #f7aa04; }
   .green-circle--op1 {
     left: 95%;
     top: -35%; }
-  .green-circle--2 {
-    left: 40%;
+  .green-circle--op2 {
+    left: 95%;
     top: 77%; }
-  .green-circle--inner {
-    background-color: #F6FCFE; }
+  .green-circle--innerx {
+    background-color: #f3a10a; }
 
 .date_header {
   margin-top: 1.3rem;

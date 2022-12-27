@@ -25797,7 +25797,62 @@ var img_edit = _edit.default;
 exports.img_edit = img_edit;
 var img_delete = _delete.default;
 exports.img_delete = img_delete;
-},{"../assets/img/home.png":"assets/img/home.png","../assets/img/add.png":"assets/img/add.png","../assets/img/search.png":"assets/img/search.png","../assets/img/edit.png":"assets/img/edit.png","../assets/img/delete.png":"assets/img/delete.png"}],"components/Background.js":[function(require,module,exports) {
+},{"../assets/img/home.png":"assets/img/home.png","../assets/img/add.png":"assets/img/add.png","../assets/img/search.png":"assets/img/search.png","../assets/img/edit.png":"assets/img/edit.png","../assets/img/delete.png":"assets/img/delete.png"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+  return bundleURL;
+}
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+  return '/';
+}
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+function updateLink(link) {
+  var newLink = link.cloneNode();
+  newLink.onload = function () {
+    link.remove();
+  };
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+var cssTimeout = null;
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+    cssTimeout = null;
+  }, 50);
+}
+module.exports = reloadCSS;
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/style.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Background.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25805,6 +25860,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
+require("../assets/style.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var Background = function Background() {
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -25820,18 +25876,18 @@ var Background = function Background() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "background__circle--inner blue-circle--inner"
   }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__circle--outer green-circle green-circle--1"
+    className: "background__circle--outer green-circle green-circle--op1"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__circle--inner green-circle--inner"
+    className: "background__circle--inner green-circle--innerx"
   })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__circle--outer green-circle green-circle--2"
+    className: "background__circle--outer green-circle green-circle--op2"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__circle--inner green-circle--inner"
+    className: "background__circle--inner green-circle--innerx"
   })));
 };
 var _default = Background;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"data/rest_connection.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/style.css":"assets/style.css"}],"data/rest_connection.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26745,58 +26801,7 @@ function App() {
 }
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../data/images":"data/images.js","./Background":"components/Background.js","./AddAppointment":"components/AddAppointment.js","./SearchContent":"components/SearchContent.js","./SideContent":"components/SideContent.js","./RecordsContent":"components/RecordsContent.js","./Header":"components/Header.js","./Editmodal":"components/Editmodal.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-  return bundleURL;
-}
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-  return '/';
-}
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-    cssTimeout = null;
-  }, 50);
-}
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/sass/main.scss":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../data/images":"data/images.js","./Background":"components/Background.js","./AddAppointment":"components/AddAppointment.js","./SearchContent":"components/SearchContent.js","./SideContent":"components/SideContent.js","./RecordsContent":"components/RecordsContent.js","./Header":"components/Header.js","./Editmodal":"components/Editmodal.js"}],"assets/sass/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -26834,7 +26839,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39261" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38615" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
