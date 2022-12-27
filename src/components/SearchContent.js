@@ -45,15 +45,15 @@ function SearchContent(){
         <div className="search-content">
             <div className="search-content__bar">
                 <div className="form-input">
-                    <span className="form-input__label">DATE FROM</span>
+                    <span className="form-input__label">DATE DE</span>
                     <input className = "form-input__text" type="date" value={dateFromQuery} onChange={updateQuery(setDateFromQuery)}/>
                 </div>
                 <div className="form-input">
-                    <span className="form-input__label">DATE TO</span>
+                    <span className="form-input__label">DATE A</span>
                     <input className = "form-input__text" type="date" value={dateToQuery} onChange={updateQuery(setDateToQuery)}/>
                 </div>
                 <div className="search-content__button">
-                    <button onClick={searchData} className= "form-input__button" >Search</button>
+                    <button onClick={searchData} className= "form-input__button" >Recherche</button>
                 </div>
             </div>{
                 !isPressed?(<RecordsContent date_from={dateFrom} date_to={dateTo}/>):

@@ -13,8 +13,8 @@ function App(){
     const [isAddPane,setIsAddPane] = useState(false)
     const [isRecordsPane,setIsRecordsPane] = useState(true)
     const [isSearchPane,setIsSearchPane] = useState(false)
-    const [header,setHeader] = useState('SCHEDULE')
-    const [subHeader,setSubHeader] = useState('TODAY')
+    const [header,setHeader] = useState('')
+    const [subHeader,setSubHeader] = useState('')
 
     const updatePane = setPane => () =>{
         setIsAddPane(false)
@@ -25,18 +25,18 @@ function App(){
 
     const Pane = () =>{
         if (isRecordsPane){
-            setHeader('SCHEDULE')
-            setSubHeader('Home')
+            setHeader('Rendez-vous')
+            setSubHeader('')
             return(<RecordsContent/>)
         }
         else if (isAddPane){
             setHeader('Réserver un rendez-vous')
-            setSubHeader('Booking')
+            setSubHeader('Fixer Rendez-vous')
             return(<AddAppointment/>)
         }
         else if (isSearchPane){
-            setHeader('Search Record')
-            setSubHeader('Date Range')
+            setHeader('Recherche Rendez-vous')
+            setSubHeader('Date Selection')
             return(<SearchContent/>)
         }
     }

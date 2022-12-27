@@ -26562,7 +26562,7 @@ function SearchContent() {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
     className: "form-input__label"
-  }, "DATE FROM"), /*#__PURE__*/_react.default.createElement("input", {
+  }, "DATE DE"), /*#__PURE__*/_react.default.createElement("input", {
     className: "form-input__text",
     type: "date",
     value: dateFromQuery,
@@ -26571,7 +26571,7 @@ function SearchContent() {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
     className: "form-input__label"
-  }, "DATE TO"), /*#__PURE__*/_react.default.createElement("input", {
+  }, "DATE A"), /*#__PURE__*/_react.default.createElement("input", {
     className: "form-input__text",
     type: "date",
     value: dateToQuery,
@@ -26581,7 +26581,7 @@ function SearchContent() {
   }, /*#__PURE__*/_react.default.createElement("button", {
     onClick: searchData,
     className: "form-input__button"
-  }, "Search"))), !isPressed ? /*#__PURE__*/_react.default.createElement(_RecordsContent.RecordsContent, {
+  }, "Recherche"))), !isPressed ? /*#__PURE__*/_react.default.createElement(_RecordsContent.RecordsContent, {
     date_from: dateFrom,
     date_to: dateTo
   }) : /*#__PURE__*/_react.default.createElement(Pane, null));
@@ -26688,11 +26688,11 @@ function App() {
     _useState6 = _slicedToArray(_useState5, 2),
     isSearchPane = _useState6[0],
     setIsSearchPane = _useState6[1];
-  var _useState7 = (0, _react.useState)('SCHEDULE'),
+  var _useState7 = (0, _react.useState)(''),
     _useState8 = _slicedToArray(_useState7, 2),
     header = _useState8[0],
     setHeader = _useState8[1];
-  var _useState9 = (0, _react.useState)('TODAY'),
+  var _useState9 = (0, _react.useState)(''),
     _useState10 = _slicedToArray(_useState9, 2),
     subHeader = _useState10[0],
     setSubHeader = _useState10[1];
@@ -26706,16 +26706,16 @@ function App() {
   };
   var Pane = function Pane() {
     if (isRecordsPane) {
-      setHeader('SCHEDULE');
-      setSubHeader('Home');
+      setHeader('Rendez-vous');
+      setSubHeader('');
       return /*#__PURE__*/_react.default.createElement(_RecordsContent.RecordsContent, null);
     } else if (isAddPane) {
       setHeader('Réserver un rendez-vous');
-      setSubHeader('Booking');
+      setSubHeader('Fixer Rendez-vous');
       return /*#__PURE__*/_react.default.createElement(_AddAppointment.default, null);
     } else if (isSearchPane) {
-      setHeader('Search Record');
-      setSubHeader('Date Range');
+      setHeader('Recherche Rendez-vous');
+      setSubHeader('Date Selection');
       return /*#__PURE__*/_react.default.createElement(_SearchContent.default, null);
     }
   };
@@ -26834,7 +26834,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36995" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39261" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
