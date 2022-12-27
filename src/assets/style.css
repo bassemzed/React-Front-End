@@ -25,29 +25,29 @@ body {
   line-height: 1.8;
   color: #575757; }
 
-.header-font {
+.header-fontx {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.5rem;
-  color: #174981; }
+  color: #131414; }
 
-.date_header-font {
+.date_header-fontx{
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.8rem;
-  color: #B9B9B9; }
+  color: #F8DF8B; }
 
-.side-content__label {
+.side-content__labelx {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 1.7;
   font-size: 1.1rem;
-  color: #B9B9B9; }
+  color: #E1578A; }
 
 .date_pin {
   padding-top: .2rem; }
@@ -66,13 +66,13 @@ body {
     font-size: 1.3rem;
     color: #575757; }
 
-.main-content__month-font {
+.main-content__month-fontx {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 1.8rem;
-  color: #B9B9B9; }
+  color: #E1578A; }
 
 .appointee__name {
   font-family: Roboto;
@@ -104,14 +104,14 @@ body {
   line-height: 1.4;
   color: #575757; }
 
-.form-input__label {
+.form-input__labelx {
   display: flex;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.4;
-  color: #B9B9B9; }
+  color: #E1578A; }
 
 .form-input__date {
   font-size: 1.7rem !important;
@@ -157,20 +157,20 @@ body {
 ::selection {
   background-color: #81B1DC; }
 
-.background {
+.backgroundx {
   position: fixed;
   width: 100vw;
-  background-color: #F6FCFE;
+  background-color: #bbc2c2;
   min-height: 100vh;
   overflow: hidden;
   z-index: -1000; }
-  .background__blue {
+  .background__bluex {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 30%;
-    background-color: #93BFE4; }
+    background-color: #bbc2c2; }
   .background__circle--outer {
     position: absolute;
     height: 42rem;
@@ -186,16 +186,16 @@ body {
     width: 67%;
     border-radius: 100%; }
 
-.blue-circle {
-  background-color: #81B1DC; }
+.blue-circlex {
+  background-color: #c325d8; }
   .blue-circle--inner {
-    background-color: #93BFE4; }
-  .blue-circle--1 {
-    left: -20%;
-    top: -20%; }
-  .blue-circle--2 {
-    top: 65%;
-    left: -35%; }
+    background-color: #c018cf; }
+  .blue-circle--11 {
+    left: -80%;
+    top: -35%; }
+  .blue-circle--22 {
+    top: 85%;
+    left: -70%; }
 
 .green-circle {
   background-color: #f7aa04; }
@@ -208,7 +208,7 @@ body {
   .green-circle--innerx {
     background-color: #f3a10a; }
 
-.date_header {
+.date_headerx {
   margin-top: 1.3rem;
   display: flex;
   position: relative;
@@ -220,7 +220,7 @@ body {
     top: 120%;
     height: 1.6rem;
     width: 100%;
-    background-color: #E2E2E2; }
+    background-color: #F8DF8B; }
 
 .side-content {
   margin-top: 2rem;
@@ -271,7 +271,7 @@ body {
     width: 100%;
     margin-bottom: 1rem;
     flex-shrink: 1; }
-  .main-content__line-container {
+  .main-content__line-containerx {
     align-self: center;
     display: flex;
     flex: 1;
@@ -279,7 +279,7 @@ body {
     width: 100%;
     margin-left: 3rem;
     margin-right: 2rem;
-    background-color: #B9B9B9;
+    background-color: #E1578A;
     border-radius: 1rem; }
   .main-content__date {
     display: flex;
@@ -304,8 +304,8 @@ body {
   -webkit-box-shadow: inset 0 0 0.3rem rgba(0, 0, 0, 0.3);
   background-color: #CBEEEB; }
 
-.appointment-container__left {
-  background-color: #81B1DC;
+.appointment-container__leftx {
+  background-color: #0f0f0f;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   display: flex;
@@ -315,13 +315,13 @@ body {
   box-shadow: var(--shadow-data);
   flex-basis: 30rem; }
 
-.appointment-container__right {
+.appointment-container__rightx {
   flex-grow: 1;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   min-height: 5rem;
-  background-color: #CBEEEB;
+  background-color: #F8DF8B;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   box-shadow: var(--shadow-data); }
@@ -361,7 +361,7 @@ body {
   align-items: center;
   padding: 1rem; }
 
-.date_pin {
+.date_pinx {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -369,7 +369,7 @@ body {
   justify-content: center;
   height: 6.4rem;
   width: 6.4rem;
-  background-color: #B9B9B9;
+  background-color: #F8DF8B;
   z-index: 2;
   border-radius: 100%; }
   .date_pin::before {
@@ -393,17 +393,17 @@ body {
   flex: 1;
   flex-direction: column;
   padding: .3rem; }
-  .form-input__text {
-    border: 0.3rem solid #CBEEEB;
+  .form-input__textx {
+    border: 0.3rem solid #F8DF8B;
     border-radius: 1rem;
     padding: .3rem 2rem;
-    background: #F6FCFE; }
-    .form-input__text:focus {
+    background: #F8DF8B; }
+    .form-input__textx:focus {
       outline: none !important;
-      border-color: #81B1DC; }
+      border-color: #F8DF8B; }
   .form-input__message {
     padding: 1rem; }
-  .form-input__button {
+  .form-input__buttonx{
     display: inline-block;
     padding: 1rem 3rem;
     margin-left: .5rem;
@@ -411,7 +411,7 @@ body {
     border: none;
     box-sizing: border-box;
     text-decoration: none;
-    background-color: #81B1DC;
+    background-color: #E1578A;
     box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
     text-align: center;
     position: relative; }
@@ -432,11 +432,11 @@ body {
   margin-right: 6rem;
   display: flex;
   flex-direction: row-reverse; }
-  .side-design-block {
+  .side-design-blockx {
     width: .8rem;
     border-radius: .6rem;
     height: 100%;
-    background-color: #93BFE4; }
+    background-color: #E2E2E2; }
 
 .book-appointment {
   display: flex;

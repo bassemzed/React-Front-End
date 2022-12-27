@@ -51,44 +51,44 @@ export const AddAppointment = () =>{
     return(
         <div className="add-appointment">
             <div className="side-design">
-                <div className="side-design-block"></div>
+                <div className="side-design-blockx"></div>
             </div>
             <div className="book-appointment">
                 <div className='book-appointment-content'>
                 <div className="form-input">
-                    <span className="form-input__label">NOM</span>
-                <input className='form-input__text'type="text"  value={firstNameQuery} onChange={updateQuery(setFirstNameQuery)}/>
+                    <span className="form-input__labelx">NOM</span>
+                <input className='form-input__textx'type="text"  value={firstNameQuery} onChange={updateQuery(setFirstNameQuery)}/>
                 </div>
                 <div className="form-input">
-                    <span className="form-input__label">PRENOM</span>
-                    <input className='form-input__text' type="text"  value={lastNameQuery} onChange={updateQuery(setLastNameQuery)}/>
+                    <span className="form-input__labelx">PRENOM</span>
+                    <input className='form-input__textx' type="text"  value={lastNameQuery} onChange={updateQuery(setLastNameQuery)}/>
                 </div>
                 </div>
                 <div className='book-appointment-content'>
                 <div className="form-input">
-                    <span className="form-input__label">DATE</span>
-                    <input className = "form-input__text" type="date" value={dateQuery} onChange={updateQuery(setDateQuery)}/>
+                    <span className="form-input__labelx">DATE</span>
+                    <input className = "form-input__textx" type="date" value={dateQuery} onChange={updateQuery(setDateQuery)}/>
                 </div>
                 </div>
                 <div className='book-appointment-content'>
                 
                 <div className="form-input">
-                    <span className="form-input__label">DE</span>
-                    <input className = "form-input__text" type="time" value={timeFromQuery} onChange={updateQuery(setTimeFromQuery)}/>
+                    <span className="form-input__labelx">DE</span>
+                    <input className = "form-input__textx" type="time" value={timeFromQuery} onChange={updateQuery(setTimeFromQuery)}/>
                 </div>
                 <div className="form-input">
-                    <span className="form-input__label">A</span>
-                    <input className = "form-input__text" type="time" value={timeToQuery} onChange={updateQuery(setTimeToQuery)}/>
+                    <span className="form-input__labelx">A</span>
+                    <input className = "form-input__textx" type="time" value={timeToQuery} onChange={updateQuery(setTimeToQuery)}/>
                 </div>
                 </div>
                 <div className="book-appointment-content">
                     <div className="form-input">
-                        <span className="form-input__label">TITRE</span>
-                        <textarea className= 'form-input__text' type="textarea" value={commentQuery} onChange={updateQuery(setCommentQuery)}/>
+                        <span className="form-input__labelx">TITRE</span>
+                        <textarea className= 'form-input__textx' type="textarea" value={commentQuery} onChange={updateQuery(setCommentQuery)}/>
                     </div>
                 </div>
                 <div className="book-appointment-content">
-                <button className= "form-input__button" onClick={addData}>Add</button>
+                <button className= "form-input__buttonx" onClick={addData}>Add</button>
                 <h3 className='form-input__message' style={isAccepted?{color:"green"}:{color:"red"}}>{message}</h3>
                 </div>
             </div>

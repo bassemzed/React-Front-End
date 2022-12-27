@@ -5,7 +5,7 @@ import {month_arr,day_arr} from '../data/date_arrays'
 import {useFetchPost} from './hooks'
 import {host_link} from '../data/rest_connection'
 import  EditModal  from './Editmodal'
-
+import "../assets/style.css"
 
 const clickedEditResult = (id,setShowEditModal,setEditID) => () =>{
     setShowEditModal(true)
@@ -104,15 +104,15 @@ export const DatePin = ({month='',date_day='',day=''}) =>{
         <div className="main-content__date-container">
 
         <div className="main-content__date">
-            <div className="date_pin">
+            <div className="date_pinx">
                 <h3 className="date_pin__days">{date_day}</h3>
                 <span className="date_pin__day">{day}</span>
             </div>
             <div className="main-content__month">
-            <h3 className="main-content__month-font">{month}</h3>
+            <h3 className="main-content__month-fontx">{month}</h3>
             </div>
         </div>
-        <div className="main-content__line-container">
+        <div className="main-content__line-containerx">
             <div className="main-content__line"></div>
         </div>
         </div>
@@ -122,7 +122,7 @@ export const DatePin = ({month='',date_day='',day=''}) =>{
 export const Appointment = ({name='',time='',comments='',id='',set_modal,set_edit_id}) =>{
     return(
         <div className="appointment-container">
-            <div className="appointment-container__left">
+            <div className="appointment-container__leftx">
                 <div className="appointee__name">
                     <span>{name}</span>
                 </div>
@@ -130,7 +130,7 @@ export const Appointment = ({name='',time='',comments='',id='',set_modal,set_edi
                     <span>{time}</span>
                 </div>
             </div>
-           <div className="appointment-container__right">
+           <div className="appointment-container__rightx">
             <div className="ed-button-container">
                 <a className="ed-button" onClick={clickedEditResult(id,set_modal,set_edit_id)}>
                     <img src={img_edit} alt="EDIT" className="ed-button__img"/>

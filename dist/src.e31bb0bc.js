@@ -25864,23 +25864,23 @@ require("../assets/style.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var Background = function Background() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "background"
+    className: "backgroundx"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__blue"
+    className: "background__bluex"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__circle--outer blue-circle blue-circle--1"
+    className: "background__circle--outer  blue-circle--11"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "background__circle--inner blue-circle--inner"
   })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__circle--outer blue-circle blue-circle--2"
+    className: "background__circle--outer  blue-circle--22"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "background__circle--inner blue-circle--inner"
   }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__circle--outer green-circle green-circle--op1"
+    className: "background__circle--outer  green-circle--op1"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "background__circle--inner green-circle--innerx"
   })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "background__circle--outer green-circle green-circle--op2"
+    className: "background__circle--outer  green-circle--op2"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "background__circle--inner green-circle--innerx"
   })));
@@ -25997,7 +25997,7 @@ var AddAppointment = function AddAppointment() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "side-design"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "side-design-block"
+    className: "side-design-blockx"
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "book-appointment"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -26005,18 +26005,18 @@ var AddAppointment = function AddAppointment() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "NOM"), /*#__PURE__*/_react.default.createElement("input", {
-    className: "form-input__text",
+    className: "form-input__textx",
     type: "text",
     value: firstNameQuery,
     onChange: updateQuery(setFirstNameQuery)
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "PRENOM"), /*#__PURE__*/_react.default.createElement("input", {
-    className: "form-input__text",
+    className: "form-input__textx",
     type: "text",
     value: lastNameQuery,
     onChange: updateQuery(setLastNameQuery)
@@ -26025,9 +26025,9 @@ var AddAppointment = function AddAppointment() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "DATE"), /*#__PURE__*/_react.default.createElement("input", {
-    className: "form-input__text",
+    className: "form-input__textx",
     type: "date",
     value: dateQuery,
     onChange: updateQuery(setDateQuery)
@@ -26036,18 +26036,18 @@ var AddAppointment = function AddAppointment() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "DE"), /*#__PURE__*/_react.default.createElement("input", {
-    className: "form-input__text",
+    className: "form-input__textx",
     type: "time",
     value: timeFromQuery,
     onChange: updateQuery(setTimeFromQuery)
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "A"), /*#__PURE__*/_react.default.createElement("input", {
-    className: "form-input__text",
+    className: "form-input__textx",
     type: "time",
     value: timeToQuery,
     onChange: updateQuery(setTimeToQuery)
@@ -26056,16 +26056,16 @@ var AddAppointment = function AddAppointment() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "TITRE"), /*#__PURE__*/_react.default.createElement("textarea", {
-    className: "form-input__text",
+    className: "form-input__textx",
     type: "textarea",
     value: commentQuery,
     onChange: updateQuery(setCommentQuery)
   }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "book-appointment-content"
   }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "form-input__button",
+    className: "form-input__buttonx",
     onClick: addData
   }, "Add"), /*#__PURE__*/_react.default.createElement("h3", {
     className: "form-input__message",
@@ -26264,13 +26264,13 @@ var EditModal = function EditModal(_ref) {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "edit-modal"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "edit-modal__header main-content__month-font"
+    className: "edit-modal__header main-content__month-fontx"
   }, "Edit Record"), /*#__PURE__*/_react.default.createElement("div", {
     className: "edit-modal-content"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "NOM"), /*#__PURE__*/_react.default.createElement("input", {
     className: "form-input__text",
     type: "text",
@@ -26279,7 +26279,7 @@ var EditModal = function EditModal(_ref) {
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "PRENOM"), /*#__PURE__*/_react.default.createElement("input", {
     className: "form-input__text",
     type: "text",
@@ -26288,7 +26288,7 @@ var EditModal = function EditModal(_ref) {
   }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "DATE"), /*#__PURE__*/_react.default.createElement("input", {
     className: "form-input__text",
     type: "date",
@@ -26299,7 +26299,7 @@ var EditModal = function EditModal(_ref) {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "FROM"), /*#__PURE__*/_react.default.createElement("input", {
     className: "form-input__text",
     type: "time",
@@ -26308,7 +26308,7 @@ var EditModal = function EditModal(_ref) {
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "TO"), /*#__PURE__*/_react.default.createElement("input", {
     className: "form-input__text",
     type: "time",
@@ -26317,7 +26317,7 @@ var EditModal = function EditModal(_ref) {
   }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "COMMENTS"), /*#__PURE__*/_react.default.createElement("textarea", {
     className: "form-input__text",
     type: "textarea",
@@ -26326,7 +26326,7 @@ var EditModal = function EditModal(_ref) {
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "edit-modal-content edit-modal-content__bottom"
   }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "form-input__button",
+    className: "form-input__buttonx",
     onClick: updateData(set_modal)
   }, "Save"), /*#__PURE__*/_react.default.createElement("h3", {
     className: "form-input__message",
@@ -26352,6 +26352,7 @@ var _date_arrays = require("../data/date_arrays");
 var _hooks = require("./hooks");
 var _rest_connection = require("../data/rest_connection");
 var _Editmodal = _interopRequireDefault(require("./Editmodal"));
+require("../assets/style.css");
 var _this = void 0;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -26487,7 +26488,7 @@ var DatePin = function DatePin(_ref2) {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "main-content__date"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "date_pin"
+    className: "date_pinx"
   }, /*#__PURE__*/_react.default.createElement("h3", {
     className: "date_pin__days"
   }, date_day), /*#__PURE__*/_react.default.createElement("span", {
@@ -26495,9 +26496,9 @@ var DatePin = function DatePin(_ref2) {
   }, day)), /*#__PURE__*/_react.default.createElement("div", {
     className: "main-content__month"
   }, /*#__PURE__*/_react.default.createElement("h3", {
-    className: "main-content__month-font"
+    className: "main-content__month-fontx"
   }, month))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "main-content__line-container"
+    className: "main-content__line-containerx"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "main-content__line"
   })));
@@ -26517,13 +26518,13 @@ var Appointment = function Appointment(_ref3) {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "appointment-container"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "appointment-container__left"
+    className: "appointment-container__leftx"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "appointee__name"
   }, /*#__PURE__*/_react.default.createElement("span", null, name)), /*#__PURE__*/_react.default.createElement("div", {
     className: "appointee__time"
   }, /*#__PURE__*/_react.default.createElement("span", null, time))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "appointment-container__right"
+    className: "appointment-container__rightx"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "ed-button-container"
   }, /*#__PURE__*/_react.default.createElement("a", {
@@ -26547,7 +26548,7 @@ var Appointment = function Appointment(_ref3) {
   }, comments))));
 };
 exports.Appointment = Appointment;
-},{"react":"../node_modules/react/index.js","../assets/img/edit.png":"assets/img/edit.png","../assets/img/delete.png":"assets/img/delete.png","../data/date_arrays":"data/date_arrays.js","./hooks":"components/hooks.js","../data/rest_connection":"data/rest_connection.js","./Editmodal":"components/Editmodal.js"}],"components/SearchContent.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/img/edit.png":"assets/img/edit.png","../assets/img/delete.png":"assets/img/delete.png","../data/date_arrays":"data/date_arrays.js","./hooks":"components/hooks.js","../data/rest_connection":"data/rest_connection.js","./Editmodal":"components/Editmodal.js","../assets/style.css":"assets/style.css"}],"components/SearchContent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26617,18 +26618,18 @@ function SearchContent() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "DATE DE"), /*#__PURE__*/_react.default.createElement("input", {
-    className: "form-input__text",
+    className: "form-input__textx",
     type: "date",
     value: dateFromQuery,
     onChange: updateQuery(setDateFromQuery)
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-input"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "form-input__label"
+    className: "form-input__labelx"
   }, "DATE A"), /*#__PURE__*/_react.default.createElement("input", {
-    className: "form-input__text",
+    className: "form-input__textx",
     type: "date",
     value: dateToQuery,
     onChange: updateQuery(setDateToQuery)
@@ -26636,7 +26637,7 @@ function SearchContent() {
     className: "search-content__button"
   }, /*#__PURE__*/_react.default.createElement("button", {
     onClick: searchData,
-    className: "form-input__button"
+    className: "form-input__buttonx"
   }, "Recherche"))), !isPressed ? /*#__PURE__*/_react.default.createElement(_RecordsContent.RecordsContent, {
     date_from: dateFrom,
     date_to: dateTo
@@ -26675,7 +26676,7 @@ var SideContentButton = function SideContentButton(_ref2) {
     src: img_src,
     alt: title
   }), /*#__PURE__*/_react.default.createElement("span", {
-    className: "side-content__label"
+    className: "side-content__labelx"
   }, title)));
 };
 exports.SideContentButton = SideContentButton;
@@ -26687,6 +26688,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
+require("../assets/style.css");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var Header = function Header(_ref) {
@@ -26697,16 +26699,16 @@ var Header = function Header(_ref) {
   return /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "header"
   }, /*#__PURE__*/_react.default.createElement("h1", {
-    className: "header-font"
+    className: "header-fontx"
   }, header)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "date_header"
+    className: "date_headerx"
   }, /*#__PURE__*/_react.default.createElement("h2", {
-    className: "date_header-font"
+    className: "date_header-fontx"
   }, sub_header)));
 };
 var _default = Header;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/style.css":"assets/style.css"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26839,7 +26841,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38615" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44461" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

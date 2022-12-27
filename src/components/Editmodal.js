@@ -67,40 +67,40 @@ export const EditModal = ({set_modal,id}) =>{
 
     return(
         <div className="edit-modal">
-            <span className="edit-modal__header main-content__month-font">Edit Record</span>
+            <span className="edit-modal__header main-content__month-fontx">Edit Record</span>
             <div className="edit-modal-content">
             <div className="form-input">
-                <span className="form-input__label">NOM</span>
+                <span className="form-input__labelx">NOM</span>
                 <input className='form-input__text'type="text"  value={firstNameQuery} onChange={updateQuery(setFirstNameQuery)}/>
             </div>
             <div className="form-input">
-                <span className="form-input__label">PRENOM</span>
+                <span className="form-input__labelx">PRENOM</span>
                 <input className='form-input__text' type="text"  value={lastNameQuery} onChange={updateQuery(setLastNameQuery)}/>
             </div>
             </div>
 
             <div className="form-input">
-                <span className="form-input__label">DATE</span>
+                <span className="form-input__labelx">DATE</span>
                 <input className = "form-input__text" type="date" value={dateQuery} onChange={updateQuery(setDateQuery)}/>
             </div>
             <div className="edit-modal-content">
             <div className="form-input">
-                <span className="form-input__label">FROM</span>
+                <span className="form-input__labelx">FROM</span>
                 <input className = "form-input__text" type="time" value={timeFromQuery} onChange={updateQuery(setTimeFromQuery)}/>
             </div>
             <div className="form-input">
-                <span className="form-input__label">TO</span>
+                <span className="form-input__labelx">TO</span>
                 <input className = "form-input__text" type="time" value={timeToQuery} onChange={updateQuery(setTimeToQuery)}/>
             </div>
             </div>
 
             <div className="form-input">
-                <span className="form-input__label">COMMENTS</span>
+                <span className="form-input__labelx">COMMENTS</span>
                 <textarea className= 'form-input__text' type="textarea" value={commentQuery} onChange={updateQuery(setCommentQuery)}/>
             </div>
             
             <div className="edit-modal-content edit-modal-content__bottom">
-            <button className= "form-input__button" onClick={updateData(set_modal)}>Save</button>
+            <button className= "form-input__buttonx" onClick={updateData(set_modal)}>Save</button>
             <h3 className='form-input__message' style={isAccepted?{color:"green"}:{color:"red"}}>{message}</h3>
             </div>
             
