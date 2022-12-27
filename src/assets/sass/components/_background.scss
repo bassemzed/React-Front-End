@@ -1,0 +1,66 @@
+.background{
+    position:fixed;
+    width: 100vw;
+    background-color: $color-secondary-light;
+    min-height: 100vh;
+    overflow:hidden;
+    z-index:-1000;
+    &__blue{
+        position:absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 30%;
+        background-color:$color-primary-light;
+    }
+
+    &__circle{
+        &--outer{
+            position:absolute;
+            height:42rem;
+            width:42rem;
+            border-radius:100%;
+        }
+        &--inner{
+            position:absolute;
+            @include absCenter;
+            height:67%;
+            width:67%;
+            border-radius:100%;
+        }
+    }
+}
+.blue-circle{
+    background-color:$color-primary;
+    
+    &--inner{
+        background-color:$color-primary-light;
+    }
+
+    &--1{
+        left:-20%;
+        top: -20%;
+    }
+
+    &--2{
+        top:65%;
+        left:-35%;
+    }
+}
+
+.green-circle{
+    background-color:$color-secondary;
+    &--1{
+        left:78%;
+        top:-20%
+    }
+
+    &--2{
+        left:40%;
+        top:77%;
+    }
+
+    &--inner{
+        background-color:$color-secondary-light;
+    }
+}

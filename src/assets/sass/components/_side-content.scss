@@ -1,0 +1,45 @@
+.side-content{
+    margin-top: 2rem;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    margin-left:5rem;
+    flex-direction:column;
+    @include respond(tab-port){
+        flex-direction:row;
+        padding-bottom:4rem;
+        justify-content:flex-start;
+    }
+    height:100%;
+    flex-basis:15%;
+
+    &__button{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        @include respond(tab-port){
+            padding-right:2rem;
+        }
+        &__image{
+            width:4rem;
+            @include respond(tab-port){
+                width:8rem;
+            }
+            user-drag: none; 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            transition: transform .2s;
+            &:active{
+                transform: scale(.95);
+            }
+        }
+        padding-bottom:1rem;
+
+        
+    }
+    
+
+}

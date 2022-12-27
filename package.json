@@ -1,0 +1,22 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "react website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "start": "npm run build && live-server dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^7.0.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

@@ -1,0 +1,85 @@
+.app-body{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+}
+
+
+.main{
+    display:flex;
+    flex-direction:column;
+    padding:3rem;
+    padding-bottom:7rem;
+    width:80%;
+    opacity:97%;
+    background-color:white;
+    box-shadow:var(--shadow-main);
+    z-index: 10;
+    @include respond(tab-port){
+        width:100vw;
+        height:100vh;
+        opacity:95%;
+    }
+}
+
+
+
+.content{
+    display:flex;
+    position:relative;
+    flex-direction:row;
+    @include respond(tab-port){
+        flex-direction:column;
+    }
+    margin-top:2rem;
+    min-height: 20rem;
+    width:100%;
+}
+
+.main-content{
+    height:38rem;
+}
+.add-appointment{
+    height:38rem;
+}
+
+.search-content{
+    height:42rem;
+    margin-top:-4rem;
+
+    width:100%;
+    display:flex;
+    flex-direction:column;
+
+    &__bar{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        width:100%;
+        padding-bottom:2rem;
+        padding-left:5rem;
+        padding-right:2rem;
+    }
+    &__button{
+        display:flex;
+        height:100%;
+        align-items:flex-end;
+        padding-bottom:.4rem;
+        padding-right:1rem;
+    }
+}
+
+
+.appointment-container{
+    padding:1rem 6rem;
+
+    display:flex;
+    flex-direction:row;
+}
+
+
+
+

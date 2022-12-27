@@ -1,0 +1,29 @@
+.date_pin{   
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:6.4rem;
+    width:6.4rem;
+    background-color:$color-grey-font;
+    z-index: 2;
+    border-radius:100%;
+    &::before{
+        content:"";
+        position:absolute;
+        height:5.5rem;
+        width:5.5rem;
+        @include absCenter;
+        background-color:white;
+        border-radius:100%;
+    }
+
+    &__days{
+        z-index:3;
+    }
+
+    &__day{
+        z-index:3;
+    }
+}

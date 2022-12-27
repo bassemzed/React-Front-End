@@ -1,0 +1,15 @@
+.date_header{
+    margin-top:1.3rem;
+    display:flex;
+    position:relative;
+    flex-direction:row-reverse;
+    width:15%;
+    &::before{
+        content:'';
+        position:absolute;
+        top:120%;
+        height:1.6rem;
+        width:100%;
+        background-color:$color-grey;
+    }
+}

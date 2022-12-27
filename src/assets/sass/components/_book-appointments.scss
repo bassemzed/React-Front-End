@@ -1,0 +1,32 @@
+.add-appointment{
+    display:flex;
+    flex-direction:row;
+    // background-color:green;
+    
+
+}
+.side-design{
+    margin-left:6rem;
+    margin-right:6rem;
+    display:flex;
+    flex-direction:row-reverse;
+
+    &-block{
+        width:.8rem;
+        border-radius:.6rem;
+        height:100%;
+        background-color:$color-primary-light;
+        
+    }
+}
+
+.book-appointment{
+    display:flex;
+    flex-direction:column;
+    margin-right:10rem;
+    &-content{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+}
